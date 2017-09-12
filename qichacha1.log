@@ -1,0 +1,687 @@
+nohup: ignoring input
+2017-07-14 10:34:53 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: qichacha)
+2017-07-14 10:34:53 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'qichacha.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['qichacha.spiders'], 'BOT_NAME': 'qichacha', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36', 'FEED_EXPORT_ENCODING': 'gbk', 'DOWNLOAD_DELAY': 5}
+2017-07-14 10:34:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-07-14 10:34:54 [py.warnings] WARNING: /data/python/qichacha/qichacha/middlewares.py:10: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.useragent` is deprecated, use `scrapy.downloadermiddlewares.useragent` instead
+  from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
+
+2017-07-14 10:34:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'qichacha.middlewares.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-14 10:34:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-14 10:34:55 [scrapy.middleware] INFO: Enabled item pipelines:
+['qichacha.pipelines.QichachaPipeline']
+2017-07-14 10:34:55 [scrapy.core.engine] INFO: Spider opened
+2017-07-14 10:34:55 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:34:55 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-07-14 10:34:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/robots.txt> (referer: None)
+2017-07-14 10:35:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/user_login> (referer: None)
+2017-07-14 10:35:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/user_login?sig_one=05LhskazT-maWpw8U2LmKB3QinSEf25gceASVjQojoMlxOrLYopJuxIJaGsTYf32gNQN4JBNu1LYXrW9xImZ0X6DD0Q6nBOKaxida1cokTdPF0RwtKkX1nIQfiQoHoANJJ1znmek3sAdzC96DzfIuT48Pt_PjWvEABJ47xGOUxs5pP2btTxUBUTYWG7sETQsLP-9mgLY04FeTyqagKa4MVD1hxMgVF6pDW4QD1bgllG_KeojQnEd9mLErY_Atb99k9Yn-GrW3AL7HPi7v0QSx1gqzx4uQjIrj3tSqf4H8J-3qO7raJwI6eM6vR2u77OpV3&verify_type=1&token_one=QNYX%3A1499957990145%3A0.6167600148644341&scene_one=login&csessionid_one=01RGpRDMWvrFihIVZpI9IiDLCMukJb5wygnUHr_xFgWIegcOf-vRFUwvGYP1_oSvX7mji-apZNVH5xFmdBlEJpMvZG5kc9ij6_AYnrMCh4tHCWvGr0uFeOb_oizPOpArhN&nameNormal=18816797855&keep=on&pwdNormal=523920> (referer: https://www.qichacha.com/user_login)
+2017-07-14 10:35:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com> (referer: https://www.qichacha.com/user_login?sig_one=05LhskazT-maWpw8U2LmKB3QinSEf25gceASVjQojoMlxOrLYopJuxIJaGsTYf32gNQN4JBNu1LYXrW9xImZ0X6DD0Q6nBOKaxida1cokTdPF0RwtKkX1nIQfiQoHoANJJ1znmek3sAdzC96DzfIuT48Pt_PjWvEABJ47xGOUxs5pP2btTxUBUTYWG7sETQsLP-9mgLY04FeTyqagKa4MVD1hxMgVF6pDW4QD1bgllG_KeojQnEd9mLErY_Atb99k9Yn-GrW3AL7HPi7v0QSx1gqzx4uQjIrj3tSqf4H8J-3qO7raJwI6eM6vR2u77OpV3&verify_type=1&token_one=QNYX%3A1499957990145%3A0.6167600148644341&scene_one=login&csessionid_one=01RGpRDMWvrFihIVZpI9IiDLCMukJb5wygnUHr_xFgWIegcOf-vRFUwvGYP1_oSvX7mji-apZNVH5xFmdBlEJpMvZG5kc9ij6_AYnrMCh4tHCWvGr0uFeOb_oizPOpArhN&nameNormal=18816797855&keep=on&pwdNormal=523920)
+2017-07-14 10:35:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2> (referer: https://www.qichacha.com)
+2017-07-14 10:35:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2> (referer: https://www.qichacha.com)
+2017-07-14 10:35:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2> (referer: https://www.qichacha.com)
+2017-07-14 10:35:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2> (referer: https://www.qichacha.com)
+2017-07-14 10:35:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2> (referer: https://www.qichacha.com)
+2017-07-14 10:35:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2> (referer: https://www.qichacha.com)
+2017-07-14 10:35:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2> (referer: https://www.qichacha.com)
+2017-07-14 10:35:55 [scrapy.extensions.logstats] INFO: Crawled 11 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:36:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1> (referer: https://www.qichacha.com)
+2017-07-14 10:36:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1> (referer: https://www.qichacha.com)
+2017-07-14 10:36:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1> (referer: https://www.qichacha.com)
+2017-07-14 10:36:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1> (referer: https://www.qichacha.com)
+2017-07-14 10:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1> (referer: https://www.qichacha.com)
+2017-07-14 10:36:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1> (referer: https://www.qichacha.com)
+2017-07-14 10:36:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1> (referer: https://www.qichacha.com)
+2017-07-14 10:36:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0> (referer: https://www.qichacha.com)
+2017-07-14 10:36:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0> (referer: https://www.qichacha.com)
+2017-07-14 10:36:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19> (referer: https://www.qichacha.com)
+2017-07-14 10:36:55 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:37:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2)
+2017-07-14 10:37:02 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2&&p=2> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2017-07-14 10:37:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2)
+2017-07-14 10:37:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2)
+2017-07-14 10:37:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2)
+2017-07-14 10:37:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2)
+2017-07-14 10:37:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2)
+2017-07-14 10:37:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2)
+2017-07-14 10:37:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1)
+2017-07-14 10:37:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1)
+2017-07-14 10:37:55 [scrapy.extensions.logstats] INFO: Crawled 30 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:37:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1)
+2017-07-14 10:38:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1)
+2017-07-14 10:38:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1)
+2017-07-14 10:38:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1)
+2017-07-14 10:38:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1)
+2017-07-14 10:38:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0)
+2017-07-14 10:38:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0)
+2017-07-14 10:38:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=99> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:38:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JX_c1d165d7c3a6cb0712cce58cce769fbb.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2&p=99)
+2017-07-14 10:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_FJ_35161fcc9f0db5c41a8a16f5ae90a9a2.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2&p=99)
+2017-07-14 10:38:55 [scrapy.extensions.logstats] INFO: Crawled 40 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:38:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_CQ_2f06cc302459e82fccb1de226f3d2d32.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2&p=99)
+2017-07-14 10:39:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_LN_1b98c5ee6e4619f7f425ea60f9818d82.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2&p=99)
+2017-07-14 10:39:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SAX_3759adc36c4355c711038e60ef61e57b.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2&p=99)
+2017-07-14 10:39:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_NMG_9dbd83a248ce09541f3eed7d293b6448.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2&p=99)
+2017-07-14 10:39:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_FJ_b623f24278d086ba945fb69624631097.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2&p=99)
+2017-07-14 10:39:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GS_22ed77882db270d1b47a62e2e8e320ff.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1&p=99)
+2017-07-14 10:39:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SAX_516072124469b1aa1052d626544773df.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1&p=99)
+2017-07-14 10:39:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SD_66f49c773d4e81a0dfe6b185401d5ac3.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1&p=99)
+2017-07-14 10:39:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_QH_92571224a76b8582853797b966f1fbba.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1&p=99)
+2017-07-14 10:39:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HB_ae9e6ca1e1ff0ed2e0584f631b695bb0.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1&p=99)
+2017-07-14 10:39:55 [scrapy.extensions.logstats] INFO: Crawled 50 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:39:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_NX_15860a07add94082607c28a0d8117ba6.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1&p=99)
+2017-07-14 10:40:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_16306b41e2e0cc98884be8b63006a091.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1&p=99)
+2017-07-14 10:40:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JL_99f5cd422f9f676cfb9486546a8d7978.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0&p=99)
+2017-07-14 10:40:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_8cbd6b4c817ce07e982db3add83609bc.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0&p=99)
+2017-07-14 10:40:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_9710007ee6263c7dc08bbec0a2d06374.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=99)
+2017-07-14 10:40:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.qichacha.com/index_verifyAction> (referer: None)
+2017-07-14 10:40:26 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.qichacha.com/index_verifyAction> (referer: None)
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/2.7.13/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/data/python/qichacha/qichacha/spiders/qichacha_v1.py", line 186, in verification
+    return [scrapy.Request.from_response(response,
+AttributeError: type object 'Request' has no attribute 'from_response'
+2017-07-14 10:40:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_fdc12e9c03f01bb181f5e02bc3cdbc13.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=99)
+2017-07-14 10:40:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_TJ_09f97f940754ce7e9b9d5fba9ca0a5c4.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=99)
+2017-07-14 10:40:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_67a7af632098ab0e78d96f3103ecc382.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=99)
+2017-07-14 10:40:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_43d3f0788fe7c149f7bd50e1936dfff0.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=99)
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JX_c1d165d7c3a6cb0712cce58cce769fbb.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_FJ_35161fcc9f0db5c41a8a16f5ae90a9a2.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_CQ_2f06cc302459e82fccb1de226f3d2d32.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_LN_1b98c5ee6e4619f7f425ea60f9818d82.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SAX_3759adc36c4355c711038e60ef61e57b.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_NMG_9dbd83a248ce09541f3eed7d293b6448.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_FJ_b623f24278d086ba945fb69624631097.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GS_22ed77882db270d1b47a62e2e8e320ff.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SAX_516072124469b1aa1052d626544773df.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SD_66f49c773d4e81a0dfe6b185401d5ac3.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_QH_92571224a76b8582853797b966f1fbba.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HB_ae9e6ca1e1ff0ed2e0584f631b695bb0.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_NX_15860a07add94082607c28a0d8117ba6.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_16306b41e2e0cc98884be8b63006a091.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JL_99f5cd422f9f676cfb9486546a8d7978.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_8cbd6b4c817ce07e982db3add83609bc.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SH_9710007ee6263c7dc08bbec0a2d06374.shtml';</script>
+**************************************
+{"msg":"\u6ed1\u52a8\u9a8c\u8bc1\u5931\u8d25\uff0c\u5237\u65b0\u540e\u518d\u8bd5","success":false}
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_fdc12e9c03f01bb181f5e02bc3cdbc13.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_TJ_09f97f940754ce7e9b9d5fba9ca0a5c4.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_67a7af632098ab0e78d96f3103ecc382.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_43d3f0788fe7c149f7bd50e1936dfff0.sh2017-07-14 10:40:55 [scrapy.extensions.logstats] INFO: Crawled 60 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:40:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_8915de140d965d02d3620a3c5650b8af.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=99)
+2017-07-14 10:41:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_a004c3d587e29f5533bfb3ce333093e5.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=99)
+2017-07-14 10:41:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_c44f22c3797689c1fc81118ef7d836dd.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=99)
+2017-07-14 10:41:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_1eb6e935c0d734c7f3b6fa93a403b600.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=99)
+2017-07-14 10:41:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_bf9846ed0fb0bd4e67b27d8055151fe8.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=99)
+2017-07-14 10:41:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_9c4708b9e04fc6f99662626edb3b8f8f.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0&p=99)
+2017-07-14 10:41:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_8d21ad4c311b9a70d103dc320e88dc12.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0&p=99)
+2017-07-14 10:41:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_78ee786b405b584a503d9c5fc7a235f5.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0&p=99)
+2017-07-14 10:41:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_7d5ae322c1a24bf1d3fc1557b22dae8e.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0&p=99)
+2017-07-14 10:41:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_5d07a7226b759dced4ef233813bb7b4d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0&p=99)
+2017-07-14 10:41:55 [scrapy.extensions.logstats] INFO: Crawled 70 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:42:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_84eac20b58db5a469b5843ad15b63dda.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0&p=99)
+2017-07-14 10:42:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_71a72db38c37ada85f31e902517eb29f.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0&p=99)
+2017-07-14 10:42:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_2a890fd1671a1b56182bbd7a3afe81b2.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0&p=99)
+2017-07-14 10:42:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_40c546b2612871e4e7709180987477aa.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=04&industryorder=0&p=99)
+2017-07-14 10:42:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_57b4759304ca3dbc26c146be38a45201.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0&p=99)
+2017-07-14 10:42:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_df2c2816594b99ffff364f2e9481cabe.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0&p=99)
+2017-07-14 10:42:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_b7fdccd669740eb855069f70fb4c4213.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0&p=99)
+2017-07-14 10:42:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_3d5a8a72a89264cfc381984815d3e681.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0&p=99)
+2017-07-14 10:42:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_FJ_17aa37cce48874cde6f09bf4d2698190.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0&p=99)
+2017-07-14 10:42:55 [scrapy.extensions.logstats] INFO: Crawled 79 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:42:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_CQ_bf960426277011ebce146ffa131fca34.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0&p=99)
+2017-07-14 10:43:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HUN_11e7704ed7111b447e44b57c64f69693.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0&p=99)
+2017-07-14 10:43:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_66294b045b625815e69351c0ca066052.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0&p=99)
+tml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SH_8915de140d965d02d3620a3c5650b8af.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SH_a004c3d587e29f5533bfb3ce333093e5.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SH_c44f22c3797689c1fc81118ef7d836dd.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_1eb6e935c0d734c7f3b6fa93a403b600.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_bf9846ed0fb0bd4e67b27d8055151fe8.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_9c4708b9e04fc6f99662626edb3b8f8f.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_8d21ad4c311b9a70d103dc320e88dc12.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_78ee786b405b584a503d9c5fc7a235f5.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_7d5ae322c1a24bf1d3fc1557b22dae8e.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_5d07a7226b759dced4ef233813bb7b4d.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_84eac20b58db5a469b5843ad15b63dda.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_71a72db38c37ada85f31e902517eb29f.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_2a890fd1671a1b56182bbd7a3afe81b2.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_40c546b2612871e4e7709180987477aa.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_57b4759304ca3dbc26c146be38a45201.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_df2c2816594b99ffff364f2e9481cabe.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_b7fdccd669740eb855069f70fb4c4213.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_3d5a8a72a89264cfc381984815d3e681.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_FJ_17aa37cce48874cde6f09bf4d2698190.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_CQ_bf960426277011ebce146ffa131fca34.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HUN_11e7704ed7111b447e44b57c64f69693.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?typ2017-07-14 10:43:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_ca19075951373ef21ccb85b7758970e7.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=A&subIndustryCode=05&industryorder=0&p=99)
+2017-07-14 10:43:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SX_1f2ffbdd2e97e366a88d5ed418b187b0.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1&p=99)
+2017-07-14 10:43:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GZ_2884ba5bb811f6157c7a7b154745a2ad.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1&p=99)
+2017-07-14 10:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_YN_8b641ef2584acda87d91f6f1d070e077.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1&p=99)
+2017-07-14 10:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SAX_e78fdb7950e7a23b324528c233b7b8e9.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1&p=99)
+2017-07-14 10:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_4785a70a4f8843d0903c93744f96a272.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1&p=99)
+2017-07-14 10:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SD_255d7785cdfc101bf10061527905c5ec.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1&p=99)
+2017-07-14 10:43:55 [scrapy.extensions.logstats] INFO: Crawled 89 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:43:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SC_75604a8954042f88706aed071a9c94e9.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1&p=99)
+2017-07-14 10:44:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_e40907c85fdcfefc6729015fc752bf1d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1&p=99)
+2017-07-14 10:44:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_NMG_e6627f3e3b9662dbb8707aadd8008be1.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=06&industryorder=1&p=99)
+2017-07-14 10:44:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SD_12d8246cab8938a41dffcb8759b80861.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1&p=99)
+2017-07-14 10:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_YN_d7e7c63fb2ec8babd92c2e322db793ef.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1&p=99)
+2017-07-14 10:44:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SAX_511fd9e1fafcac0d54dc4a75ecfa8f08.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1&p=99)
+2017-07-14 10:44:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SX_9d1200abf45ad4f4c8c84f2260725521.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1&p=99)
+2017-07-14 10:44:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HAIN_61d496d718dd12769cbd71ae9162db31.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1&p=99)
+2017-07-14 10:44:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_QH_5a97a41abc8f459978430226c580f10f.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1&p=99)
+2017-07-14 10:44:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SAX_ca0643eb76380e93d16793a2f2ad9678.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1&p=99)
+2017-07-14 10:44:55 [scrapy.extensions.logstats] INFO: Crawled 99 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:45:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_NX_1775dfddb4052981e3c37d44753b197c.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1&p=99)
+2017-07-14 10:45:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HAIN_ff4609f0a425f0b8dc79bd7175ea2efd.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=07&industryorder=1&p=99)
+2017-07-14 10:45:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HB_7b4fd598fe03fb49d12852236de6885d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1&p=99)
+2017-07-14 10:45:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HB_870e3c57189fcd7262cc0bb938a4a50c.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1&p=99)
+2017-07-14 10:45:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HB_8caf4b56625cdcd665d9de82c1bb4be5.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1&p=99)
+e=companyview&back=/firm_GD_66294b045b625815e69351c0ca066052.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_ca19075951373ef21ccb85b7758970e7.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SX_1f2ffbdd2e97e366a88d5ed418b187b0.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GZ_2884ba5bb811f6157c7a7b154745a2ad.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_YN_8b641ef2584acda87d91f6f1d070e077.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SAX_e78fdb7950e7a23b324528c233b7b8e9.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_4785a70a4f8843d0903c93744f96a272.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SD_255d7785cdfc101bf10061527905c5ec.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SC_75604a8954042f88706aed071a9c94e9.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_e40907c85fdcfefc6729015fc752bf1d.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_NMG_e6627f3e3b9662dbb8707aadd8008be1.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SD_12d8246cab8938a41dffcb8759b80861.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_YN_d7e7c63fb2ec8babd92c2e322db793ef.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SAX_511fd9e1fafcac0d54dc4a75ecfa8f08.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SX_9d1200abf45ad4f4c8c84f2260725521.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HAIN_61d496d718dd12769cbd71ae9162db31.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_QH_5a97a41abc8f459978430226c580f10f.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SAX_ca0643eb76380e93d16793a2f2ad9678.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_NX_1775dfddb4052981e3c37d44753b197c.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HAIN_ff4609f0a425f0b8dc79bd7175ea2efd.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HB_7b4fd598fe03fb49d12852236de6885d.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HB_870e3c57189fcd7262cc0bb938a4a50c.shtml';</script>
+--------------------------------------2017-07-14 10:45:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HB_95dce4e7d89ab011a7f4dcbfb17e69ac.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1&p=99)
+2017-07-14 10:45:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HB_960c8345a2ef28a4c5377cb68e80339b.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1&p=99)
+2017-07-14 10:45:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HLJ_51d19c6d2db33cb16e0584f006fa2349.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1&p=99)
+2017-07-14 10:45:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HB_103def3d7c52d2c05d960050e18c89d1.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1&p=99)
+2017-07-14 10:45:55 [scrapy.extensions.logstats] INFO: Crawled 108 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:45:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HB_c8087ac697d33ac4bf4294352821ce29.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1&p=99)
+2017-07-14 10:46:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HB_e5370fd20981c9f48eaaca348bc91d1d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=08&industryorder=1&p=99)
+2017-07-14 10:46:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HLJ_ac2c6cdb3d3720ddf13488524f4a2e0d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1&p=99)
+2017-07-14 10:46:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JL_764759def0eca764454de4abf0492f80.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1&p=99)
+2017-07-14 10:46:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_LN_04b84d0212705dfc3388590db510e236.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1&p=99)
+2017-07-14 10:46:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_5ff4d80efac11ba968f82a60737bc8b4.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1&p=99)
+2017-07-14 10:46:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_ZJ_1a9e35a52cc6024e060ab70d27ab6228.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1&p=99)
+2017-07-14 10:46:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_AH_af07c126bf597c5aa9f6a6094a1278b9.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1&p=99)
+2017-07-14 10:46:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_QH_c738d1aeb9896ac098784a9afc641375.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1&p=99)
+2017-07-14 10:46:55 [scrapy.extensions.logstats] INFO: Crawled 117 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:46:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_2cbc8038bd02d2cf10d567f350865a05.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1&p=99)
+2017-07-14 10:47:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SAX_fd823b3cf88460db683c0fb96a358bf7.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=09&industryorder=1&p=99)
+2017-07-14 10:47:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_fcb5d723046d02a6b203af994a1e33fc.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1&p=99)
+2017-07-14 10:47:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GZ_a51e123398615cc2d5898b6e568047da.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1&p=99)
+2017-07-14 10:47:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_FJ_81f1b677e5ec38f0071069b43be3ee56.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1&p=99)
+2017-07-14 10:47:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_YN_3b6931107336602a026299480eb25461.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1&p=99)
+2017-07-14 10:47:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HUB_8dbbb752bc3c964b3292ab96fe4d3a4a.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1&p=99)
+2017-07-14 10:47:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HLJ_b02983756ed6376953290b8e456a38b5.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1&p=99)
+--
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HB_8caf4b56625cdcd665d9de82c1bb4be5.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HB_95dce4e7d89ab011a7f4dcbfb17e69ac.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HB_960c8345a2ef28a4c5377cb68e80339b.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HLJ_51d19c6d2db33cb16e0584f006fa2349.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HB_103def3d7c52d2c05d960050e18c89d1.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HB_c8087ac697d33ac4bf4294352821ce29.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HB_e5370fd20981c9f48eaaca348bc91d1d.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HLJ_ac2c6cdb3d3720ddf13488524f4a2e0d.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JL_764759def0eca764454de4abf0492f80.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_LN_04b84d0212705dfc3388590db510e236.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_5ff4d80efac11ba968f82a60737bc8b4.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_ZJ_1a9e35a52cc6024e060ab70d27ab6228.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_AH_af07c126bf597c5aa9f6a6094a1278b9.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_QH_c738d1aeb9896ac098784a9afc641375.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_2cbc8038bd02d2cf10d567f350865a05.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SAX_fd823b3cf88460db683c0fb96a358bf7.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_fcb5d723046d02a6b203af994a1e33fc.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GZ_a51e123398615cc2d5898b6e568047da.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_FJ_81f1b677e5ec38f0071069b43be3ee56.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_YN_3b6931107336602a026299480eb25461.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HUB_8dbbb752bc3c964b3292ab96fe4d3a4a.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HLJ_b02983756ed6376953292017-07-14 10:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HB_7fc89cffe3d9279e74f1980e8a527ad9.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1&p=99)
+2017-07-14 10:47:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HUB_40ed26e3ece0b42c5767c03ae61b7a34.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1&p=99)
+2017-07-14 10:47:55 [scrapy.extensions.logstats] INFO: Crawled 127 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:47:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HB_a6856027fd80520432b2971af6b87961.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=10&industryorder=1&p=99)
+2017-07-14 10:48:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_XJ_ce4116fe74e3ffb8ce327cc71b4a7e69.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1&p=99)
+2017-07-14 10:48:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SD_36170110bb77b392f7a074db05712245.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1&p=99)
+2017-07-14 10:48:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_0c675e1518106087924fad0aea873404.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1&p=99)
+2017-07-14 10:48:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SAX_d5a72c97ebdacb3d08912ee2db86f571.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1&p=99)
+2017-07-14 10:48:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SAX_b4aa33ab660f823830f12f7329e0ff81.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1&p=99)
+2017-07-14 10:48:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_a947258bc7581392ff21280e5f36422a.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1&p=99)
+2017-07-14 10:48:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SD_976ad929af084c9df3a6c65a8ed2fa9b.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1&p=99)
+2017-07-14 10:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_2b25ff7c718af13b63d87e117dfeb229.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1&p=99)
+2017-07-14 10:48:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_NMG_542d861f2bb160a51a9ca0ca0be1096f.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=11&industryorder=1&p=99)
+2017-07-14 10:48:55 [scrapy.extensions.logstats] INFO: Crawled 137 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HAIN_9c0643bb74b1d75a62b3896c8bc3c012.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1&p=99)
+2017-07-14 10:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_XJ_921103880b6da60f48a9d165fcef9774.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1&p=99)
+2017-07-14 10:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GZ_52a6ad237d8ff908b68dd5b211cc8447.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1&p=99)
+2017-07-14 10:49:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GZ_34969cd1098593777f824b171ce8b0a0.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1&p=99)
+2017-07-14 10:49:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HUB_6465892134da066d0fda475778f77999.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1&p=99)
+2017-07-14 10:49:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HUB_346c4f10a265cd5b5db1222a7ae2f1d0.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1&p=99)
+2017-07-14 10:49:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SD_10c7789db3270ad8e2cecec21030c313.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1&p=99)
+2017-07-14 10:49:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_966da28bb54cb2ae500157398ddd65c9.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1&p=99)
+2017-07-14 10:49:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GS_6bc5d59916c9dc45008870da20207e01.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=B&subIndustryCode=12&industryorder=1&p=99)
+2017-07-14 10:49:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SAX_8022c03436ac926e97a3a245991aab20.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2&p=99)
+0b8e456a38b5.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HB_7fc89cffe3d9279e74f1980e8a527ad9.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HUB_40ed26e3ece0b42c5767c03ae61b7a34.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HB_a6856027fd80520432b2971af6b87961.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_XJ_ce4116fe74e3ffb8ce327cc71b4a7e69.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SD_36170110bb77b392f7a074db05712245.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_0c675e1518106087924fad0aea873404.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SAX_d5a72c97ebdacb3d08912ee2db86f571.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SAX_b4aa33ab660f823830f12f7329e0ff81.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_a947258bc7581392ff21280e5f36422a.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SD_976ad929af084c9df3a6c65a8ed2fa9b.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_2b25ff7c718af13b63d87e117dfeb229.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_NMG_542d861f2bb160a51a9ca0ca0be1096f.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HAIN_9c0643bb74b1d75a62b3896c8bc3c012.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_XJ_921103880b6da60f48a9d165fcef9774.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GZ_52a6ad237d8ff908b68dd5b211cc8447.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GZ_34969cd1098593777f824b171ce8b0a0.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HUB_6465892134da066d0fda475778f77999.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HUB_346c4f10a265cd5b5db1222a7ae2f1d0.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SD_10c7789db3270ad8e2cecec21030c313.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_966da28bb54cb2ae500157398ddd65c9.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GS_6bc5d59916c9dc45008870da20207e01.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qicha2017-07-14 10:49:55 [scrapy.extensions.logstats] INFO: Crawled 147 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:49:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_BJ_b525eacb3450bf2de1f2b33b73b586ea.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2&p=99)
+2017-07-14 10:50:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_42e4f823e5b657d48dd9ffc1cdc3f20a.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2&p=99)
+2017-07-14 10:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_435a1cfd36555fdb1aba9d0a1f1da21e.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2&p=99)
+2017-07-14 10:50:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_1a2f22878f9537fa35dfde04a5f05088.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2&p=99)
+2017-07-14 10:50:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_0b77a96f6d605bc52bb51fd5063fe6bf.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2&p=99)
+2017-07-14 10:50:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_f13bfb05d9bb1c620db5baff3a594b3a.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2&p=99)
+2017-07-14 10:50:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_AH_78ea36d197303d94a5716146ce78954a.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2&p=99)
+2017-07-14 10:50:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_NX_5c62c5209bc651cb0c5c694c7cfc09b3.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=13&industryorder=2&p=99)
+2017-07-14 10:50:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_e30cc525c96e60e048da1d1dba8ecc6d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2&p=99)
+2017-07-14 10:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_c771a005d0d9dd3f78cda1a4cb4485e2.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2&p=99)
+2017-07-14 10:50:55 [scrapy.extensions.logstats] INFO: Crawled 157 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JX_f92df304a06a98ae3d506d6373732d20.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2&p=99)
+2017-07-14 10:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_16bd2d52ffddfa218cfa95bad57a4b6a.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2&p=99)
+2017-07-14 10:51:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_CQ_ad85490d09ecfdbf3c6b71817e027253.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2&p=99)
+2017-07-14 10:51:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SD_8d2429026944731167a7db2160795a16.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2&p=99)
+2017-07-14 10:51:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SC_38a48a83509363df4510dba7667fc4a1.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2&p=99)
+2017-07-14 10:51:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_NMG_918a6d8ba26c8cdc70c58a3dff67e3f8.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2&p=99)
+2017-07-14 10:51:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_TJ_6670be4f9cce5072b3107e8dbe40d838.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=14&industryorder=2&p=99)
+2017-07-14 10:51:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_842bbfaf60ba331041782b179be16987.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2&p=99)
+2017-07-14 10:51:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HB_6b17d357423f7bc15be04bdca632c84a.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2&p=99)
+2017-07-14 10:51:55 [scrapy.extensions.logstats] INFO: Crawled 166 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:51:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GZ_2e80f0dd4d88de8d58ccd1bcc8f21bdc.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2&p=99)
+2017-07-14 10:52:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HUB_e257779e73c085322b94843f857a8cd2.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2&p=99)
+2017-07-14 10:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_fcbc370909f4b2f77ac7fd0308036164.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2&p=99)
+cha.com/index_verify?type=companyview&back=/firm_SAX_8022c03436ac926e97a3a245991aab20.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_BJ_b525eacb3450bf2de1f2b33b73b586ea.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_42e4f823e5b657d48dd9ffc1cdc3f20a.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_435a1cfd36555fdb1aba9d0a1f1da21e.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_1a2f22878f9537fa35dfde04a5f05088.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_0b77a96f6d605bc52bb51fd5063fe6bf.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_f13bfb05d9bb1c620db5baff3a594b3a.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_AH_78ea36d197303d94a5716146ce78954a.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_NX_5c62c5209bc651cb0c5c694c7cfc09b3.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_e30cc525c96e60e048da1d1dba8ecc6d.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_c771a005d0d9dd3f78cda1a4cb4485e2.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JX_f92df304a06a98ae3d506d6373732d20.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_16bd2d52ffddfa218cfa95bad57a4b6a.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_CQ_ad85490d09ecfdbf3c6b71817e027253.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SD_8d2429026944731167a7db2160795a16.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SC_38a48a83509363df4510dba7667fc4a1.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_NMG_918a6d8ba26c8cdc70c58a3dff67e3f8.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_TJ_6670be4f9cce5072b3107e8dbe40d838.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_842bbfaf60ba331041782b179be16987.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HB_6b17d357423f7bc15be04bdca632c84a.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GZ_2e80f0dd4d88de8d58ccd1bcc8f21bdc.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HUB_e257779e73c085322b94843f857a8cd2.shtml';</script>
+------------------2017-07-14 10:52:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_FJ_30dbf4f68ec0f773860cbc7ee5cd4ca7.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2&p=99)
+2017-07-14 10:52:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_FJ_a4e33e3f396ef9347e046b0b1c36ef37.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2&p=99)
+2017-07-14 10:52:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_YN_72eb52d0be9dbde5d2ec3b558d11de2c.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2&p=99)
+2017-07-14 10:52:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SC_609593977410ed2516cfd6e46f88fe3f.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=15&industryorder=2&p=99)
+2017-07-14 10:52:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SC_290e2389ab018e09a3c1ff8ee2cbb43e.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2&p=99)
+2017-07-14 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_06959f0969d56ffe51505b5d49878c8f.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2&p=99)
+2017-07-14 10:52:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_YN_eba2c67e6d0ef08e7e52374142008d98.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2&p=99)
+2017-07-14 10:52:55 [scrapy.extensions.logstats] INFO: Crawled 176 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:52:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_93ee14b3aeff063becca886712843a01.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2&p=99)
+2017-07-14 10:53:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_6c4a283552075566485b0d36b89f0650.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2&p=99)
+2017-07-14 10:53:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SX_61061917b2c9e9bfadf47482788c151f.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2&p=99)
+2017-07-14 10:53:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_0b7d9ac834e5fc9cf43f941f33bcad6d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2&p=99)
+2017-07-14 10:53:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_AH_e2c473b9e8ca58261a3e0497265500eb.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2&p=99)
+2017-07-14 10:53:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HEN_7d10c1a80d6b3af2250357f3037e572c.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=16&industryorder=2&p=99)
+2017-07-14 10:53:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_ZJ_43014375419edcaedbc20bfa1bf02c3a.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2&p=99)
+2017-07-14 10:53:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_ZJ_1efdabbd772dd2916cb02eace5a61cd1.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2&p=99)
+2017-07-14 10:53:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SD_606f9c24472bd2bb0fda334d5b502fa7.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2&p=99)
+2017-07-14 10:53:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_ZJ_297815c34d557cde335a50958700b2d4.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2&p=99)
+2017-07-14 10:53:55 [scrapy.extensions.logstats] INFO: Crawled 186 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:54:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_0f93b4bcb562dae15a7c84a7e9093438.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2&p=99)
+2017-07-14 10:54:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_02d15ba171900058504b908e2d2b500f.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2&p=99)
+2017-07-14 10:54:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_d0ba4c9b3626ddc4dd99b1315db95a48.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2&p=99)
+2017-07-14 10:54:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_ZJ_0bff0e9e654bcd0c598b44a0031a2f5b.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2&p=99)
+----------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SH_fcbc370909f4b2f77ac7fd0308036164.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_FJ_30dbf4f68ec0f773860cbc7ee5cd4ca7.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_FJ_a4e33e3f396ef9347e046b0b1c36ef37.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_YN_72eb52d0be9dbde5d2ec3b558d11de2c.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SC_609593977410ed2516cfd6e46f88fe3f.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SC_290e2389ab018e09a3c1ff8ee2cbb43e.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_06959f0969d56ffe51505b5d49878c8f.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_YN_eba2c67e6d0ef08e7e52374142008d98.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_93ee14b3aeff063becca886712843a01.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_6c4a283552075566485b0d36b89f0650.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SX_61061917b2c9e9bfadf47482788c151f.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_0b7d9ac834e5fc9cf43f941f33bcad6d.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_AH_e2c473b9e8ca58261a3e0497265500eb.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HEN_7d10c1a80d6b3af2250357f3037e572c.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_ZJ_43014375419edcaedbc20bfa1bf02c3a.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_ZJ_1efdabbd772dd2916cb02eace5a61cd1.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SD_606f9c24472bd2bb0fda334d5b502fa7.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_ZJ_297815c34d557cde335a50958700b2d4.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_0f93b4bcb562dae15a7c84a7e9093438.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_02d15ba171900058504b908e2d2b500f.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_d0ba4c9b3626ddc4dd99b1315db95a48.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_ZJ_0bff2017-07-14 10:54:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_c88f2ccb5080fda54ef795c3f3556cd9.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=17&industryorder=2&p=99)
+2017-07-14 10:54:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_e17d92bca0fbd2c18f2544460378a2eb.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2&p=99)
+2017-07-14 10:54:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_5aa37db223f47a020e7e60d9fb665f55.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2&p=99)
+2017-07-14 10:54:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_11cb4ac676e277ced34b75d88699e64d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2&p=99)
+2017-07-14 10:54:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_FJ_36280004ee580f22c1af61dfb1a8be37.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2&p=99)
+2017-07-14 10:54:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_364ec3635aa9165b01b0c3624f025f9d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2&p=99)
+2017-07-14 10:54:55 [scrapy.extensions.logstats] INFO: Crawled 196 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:54:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_FJ_f5568e8dd31712ec5c99ac0e119d19b4.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2&p=99)
+2017-07-14 10:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SD_2a08826b927cf5c4a42331f5f3068837.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2&p=99)
+2017-07-14 10:55:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_ZJ_762b6c847f9b750054867e99f2cdcb4b.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2&p=99)
+2017-07-14 10:55:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JS_3b6aba4085550228109e450b857559f6.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=18&industryorder=2&p=99)
+2017-07-14 10:55:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_FJ_b1d2d68530a71b91323ea4ea9bfd345d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2&p=99)
+2017-07-14 10:55:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_904be502013ebfa2ef90543889451a19.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2&p=99)
+2017-07-14 10:55:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_a4ab8f026d8515b64ea17599e198d011.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2&p=99)
+2017-07-14 10:55:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_ZJ_7ff8fb7476d2c1de733c3816b1ec6404.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2&p=99)
+2017-07-14 10:55:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_23a53534e1e30f2848afd6ae53164a9c.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2&p=99)
+2017-07-14 10:55:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JX_393429a4e8678c1de59ec034a31e9f39.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2&p=99)
+2017-07-14 10:55:55 [scrapy.extensions.logstats] INFO: Crawled 206 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:56:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_FJ_e9fb8da3bbc5a30ed7e6471d4d181375.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2&p=99)
+2017-07-14 10:56:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_TJ_4d3790384242b3701785f9cd1e0f2e19.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2&p=99)
+2017-07-14 10:56:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JX_d1bb91af799cb7a8b607b776adfee8a3.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=C&subIndustryCode=19&industryorder=2&p=99)
+2017-07-14 10:56:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=98> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:56:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=97> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:56:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=96> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:56:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=95> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:56:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=94> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:56:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=93> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:56:55 [scrapy.extensions.logstats] INFO: Crawled 215 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:56:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=92> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:57:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=91> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:57:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=90> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:57:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=89> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:57:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=88> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:57:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=87> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:57:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=86> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:57:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=85> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:57:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=84> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:57:55 [scrapy.extensions.logstats] INFO: Crawled 224 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:57:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=83> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:58:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=82> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19)
+2017-07-14 10:58:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HLJ_75bb4b5c4e534b2b4058fbe17dc5b428.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=98)
+2017-07-14 10:58:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_FJ_52835ffff8ebe55c68139a40ca75f1ca.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=97)
+2017-07-14 10:58:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_730c8c139b9b5d70f17c597e0b2caf92.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=96)
+0e9e654bcd0c598b44a0031a2f5b.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_c88f2ccb5080fda54ef795c3f3556cd9.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_e17d92bca0fbd2c18f2544460378a2eb.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_5aa37db223f47a020e7e60d9fb665f55.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_11cb4ac676e277ced34b75d88699e64d.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_FJ_36280004ee580f22c1af61dfb1a8be37.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_364ec3635aa9165b01b0c3624f025f9d.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_FJ_f5568e8dd31712ec5c99ac0e119d19b4.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SD_2a08826b927cf5c4a42331f5f3068837.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_ZJ_762b6c847f9b750054867e99f2cdcb4b.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JS_3b6aba4085550228109e450b857559f6.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_FJ_b1d2d68530a71b91323ea4ea9bfd345d.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SH_904be502013ebfa2ef90543889451a19.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_a4ab8f026d8515b64ea17599e198d011.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_ZJ_7ff8fb7476d2c1de733c3816b1ec6404.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_23a53534e1e30f2848afd6ae53164a9c.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JX_393429a4e8678c1de59ec034a31e9f39.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_FJ_e9fb8da3bbc5a30ed7e6471d4d181375.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_TJ_4d3790384242b3701785f9cd1e0f2e19.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JX_d1bb91af799cb7a8b607b776adfee8a3.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HLJ_75bb4b5c4e534b2b4058fbe17dc5b428.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_FJ_52835ffff8ebe55c68139a40ca75f1ca.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://ww2017-07-14 10:58:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_386c6917402bfb5176e1f549608af045.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=95)
+2017-07-14 10:58:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_24219c918e4d257bb0bc72d1334339cc.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=94)
+2017-07-14 10:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_94133629caf8a4e2882223887ce7647d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=93)
+2017-07-14 10:58:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JX_fcb35152e481a77712f0945e73121067.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=92)
+2017-07-14 10:58:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_JL_0e63507c6328fd887287e3cb2ed3cc74.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=91)
+2017-07-14 10:58:55 [scrapy.extensions.logstats] INFO: Crawled 234 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2017-07-14 10:59:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GX_52783091d4b6008bfd968a8fb9ccaf6d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=90)
+2017-07-14 10:59:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_86c31ae10126e8d372ef9c27b4beac4a.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=89)
+2017-07-14 10:59:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_d068b8d73c00f37173e7da80b0ba8976.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=88)
+2017-07-14 10:59:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_HUB_05cf8e3c9e6459f1e44a7a01b758e524.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=87)
+2017-07-14 10:59:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_GD_429f0ddf643374e330b42f8a4d5dec65.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=86)
+2017-07-14 10:59:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_ad21218fdc3e5aa78710dacfeef0b63f.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=85)
+2017-07-14 10:59:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_ZJ_1b825d239a57e2e36d9a6c6d0489920b.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=84)
+2017-07-14 10:59:46 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2017-07-14 10:59:46 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-07-14 10:59:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.qichacha.com/firm_SH_eb4d7d5d8866c61dad8d1cc668525b2d.shtml> (referer: https://www.qichacha.com/gongsi_industry?industryCode=T&subIndustryCode=96&industryorder=19&p=83)
+2017-07-14 10:59:51 [scrapy.crawler] INFO: Received SIGTERM twice, forcing unclean shutdown
+w.qichacha.com/index_verify?type=companyview&back=/firm_SH_730c8c139b9b5d70f17c597e0b2caf92.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SH_386c6917402bfb5176e1f549608af045.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SH_24219c918e4d257bb0bc72d1334339cc.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SH_94133629caf8a4e2882223887ce7647d.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JX_fcb35152e481a77712f0945e73121067.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_JL_0e63507c6328fd887287e3cb2ed3cc74.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GX_52783091d4b6008bfd968a8fb9ccaf6d.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_86c31ae10126e8d372ef9c27b4beac4a.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SH_d068b8d73c00f37173e7da80b0ba8976.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_HUB_05cf8e3c9e6459f1e44a7a01b758e524.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_GD_429f0ddf643374e330b42f8a4d5dec65.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SH_ad21218fdc3e5aa78710dacfeef0b63f.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_ZJ_1b825d239a57e2e36d9a6c6d0489920b.shtml';</script>
+----------------------------------------
+<script>window.location.href='http://www.qichacha.com/index_verify?type=companyview&back=/firm_SH_eb4d7d5d8866c61dad8d1cc668525b2d.shtml';</script>
