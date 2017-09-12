@@ -32,8 +32,8 @@ class QiChaChaSpider(scrapy.Spider):
         return [scrapy.FormRequest.from_response(response,
                                                  meta= {'cookiejar':response.meta['cookiejar']},
                                                  formdata={
-                                                     'nameNormal': '18816797855',
-                                                     'pwdNormal': '523920',
+                                                     'nameNormal': 'phone number',
+                                                     'pwdNormal': 'password',
                                                      'keep': 'on',
                                                      'csessionid_one': '01RGpRDMWvrFihIVZpI9IiDLCMukJb5wygnUHr_xFgWIegcOf-vRFUwvGYP1_oSvX7mji-apZNVH5xFmdBlEJpMvZG5kc9ij6_AYnrMCh4tHCWvGr0uFeOb_oizPOpArhN',
                                                      'sig_one': '05LhskazT-maWpw8U2LmKB3QinSEf25gceASVjQojoMlxOrLYopJuxIJaGsTYf32gNQN4JBNu1LYXrW9xImZ0X6DD0Q6nBOKaxida1cokTdPF0RwtKkX1nIQfiQoHoANJJ1znmek3sAdzC96DzfIuT48Pt_PjWvEABJ47xGOUxs5pP2btTxUBUTYWG7sETQsLP-9mgLY04FeTyqagKa4MVD1hxMgVF6pDW4QD1bgllG_KeojQnEd9mLErY_Atb99k9Yn-GrW3AL7HPi7v0QSx1gqzx4uQjIrj3tSqf4H8J-3qO7raJwI6eM6vR2u77OpV3',
